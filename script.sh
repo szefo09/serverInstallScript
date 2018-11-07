@@ -1,4 +1,10 @@
 #!/bin/bash
+sudo apt-get install -y apt-transport-https
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y curl git build-essential libreadline-dev libsqlite3-dev mono-complete nodejs firewalld premake4
+sudo npm install pm2 -g
 
 sudo systemctl start firewalld
 sudo firewall-cmd --zone=public --permanent --add-port=22/tcp

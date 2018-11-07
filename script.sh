@@ -55,7 +55,6 @@ cd ..
 ln -s bin/release/ygopro ./
 strip ygopro
 mkdir replay
-cd ..
 
 git clone https://github.com/szefo09/windbot
 cd windbot
